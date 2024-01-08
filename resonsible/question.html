@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Question </title>
+    <link rel="stylesheet" href="stylee.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+  <!-- <nav class="navbar">
+    <h1 class="logo"> W'aselni</h1>
+    <ul class="nav-links">
+        <li class="active"><i href ="#" class ="fa fa-home"></i><a href="#"></a></i>Home</li>
+        <li class="active"><i class="fa-solid fa-taxi"></i><a href="#"></a>Services</li>
+        <li class="active"><i href ="#" class ="fa fa-times-circle"></i><a href="#"></a></i>ABOUT</li>
+        <li class="active"><i href ="#" class ="fa fa-id-card"><a href="#"></a></i>Contact-US</li>
+    </ul>
+</nav> -->
+
+  <div class="submit"> 
+  <button type="submit"><a href="../index.php">return </a></button>
+</div>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="imagese/mainImg.png" alt="">
+    </div>
+    <div class="accordion-text">
+      <div class="title">How do i reserve / book a ?</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">what should you do ? </span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>All you have to do is to fill in our online reservation form. You can access it here or from the main menu,
+           click to the Book A Taxi.
+           Upon completion we will receive your   request and you will receive a confirmation email of the reservation.
+           For airport Transfers, the  driver will be holding a sign with your name so that you can easily recognize him.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Do have to prepay anything?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Do have to prepay anything?</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Important reservation </span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>I have already booked a taxi using the reservation form on the website, but did not receive the reservation confirmation email?.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Services for all people</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Do you offer Taxi services for more than 4 people?</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Flight delay </span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>What happens if my flight arrives late or my travel plans are changed after I already completed my reservation?</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+     
+  </div>
+ 
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
